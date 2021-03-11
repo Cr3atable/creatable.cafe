@@ -1,7 +1,7 @@
 /* 
   Website design and developed by DEVLOOSKIE
   Abuse contact: hello@looskie.com
-  
+
   2021 - All rights reserved to creatable
 */
 
@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 /* Easter egg */
-
 let timesPressed = 0;
 const easterEgg = () => {
   timesPressed += 1;
