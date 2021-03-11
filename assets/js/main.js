@@ -1,3 +1,11 @@
+/* Preloader */
+document.addEventListener("DOMContentLoaded", () => {
+  const preloader = document.querySelector(".loader");
+  setTimeout(() => {
+    preloader.classList.add("slideDown");
+  }, 1500);
+});
+
 let timesPressed = 0;
 
 const easterEgg = () => {
