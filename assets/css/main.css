@@ -50,10 +50,13 @@ body {
   color: var(--text-lightest);
   font-size: 16px;
   font-family: JetBrainsLight;
+  overflow-x: hidden;
 }
 
 main {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: row;
 }
 
@@ -64,9 +67,26 @@ h1 {
 }
 
 a {
+  position: relative;
   color: var(--text-darker);
   font-size: 28px;
   text-decoration: none;
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: var(--text-darker);
+  visibility: hidden;
+}
+
+a:hover:before {
+  visibility: visible;
+  width: 100%;
 }
 
 a:hover {
@@ -79,8 +99,15 @@ span {
 
 p.about {
   max-width: 650px;
-  margin-top: 15px;
+  margin-top: 25px;
   font-size: 19px;
+}
+p.credits {
+  margin-left: 55px;
+  color: var(--text-darkest);
+}
+a.credits {
+  font-size: 16px;
 }
 
 .flexLeft,
@@ -89,12 +116,12 @@ p.about {
 }
 
 .flexLeft {
-  margin: 85px 55px;
+  margin: 55px;
   text-align: left;
 }
 
 .socials-title {
-  margin-top: 80px;
+  margin-top: 125px;
 }
 
 .socials-list {
@@ -114,8 +141,40 @@ p.about {
   justify-content: center;
 }
 
-/* Font faces  */
+.flexRight img {
+  margin-right: 50px;
+}
 
+footer {
+  margin-bottom: 25px;
+}
+
+.spin {
+  animation: spin 1500ms ease;
+  -webkit-animation: spin 1500ms ease;
+}
+
+/* Animations */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+
+/* Media queries */
+
+/* Font faces  */
 @font-face {
   font-family: JetBrainsLight;
   src: url("./fonts/JetBrainsMono-Light.woff2");
