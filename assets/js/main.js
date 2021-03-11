@@ -1,3 +1,9 @@
+/* 
+  Website design and developed by DEVLOOSKIE
+  Abuse contact: hello@looskie.com
+  2021 - All rights reserved to creatable
+*/
+
 /* Preloader */
 document.addEventListener("DOMContentLoaded", () => {
   const preloader = document.querySelector(".loader");
@@ -6,8 +12,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 1500);
 });
 
-let timesPressed = 0;
+/* Easter egg */
 
+let timesPressed = 0;
 const easterEgg = () => {
   timesPressed += 1;
 
