@@ -116,6 +116,7 @@ h1 {
 }
 
 a {
+  text-transform: uppercase;
   position: relative;
   color: var(--text-darker);
   font-size: 28px;
