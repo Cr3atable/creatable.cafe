@@ -1,0 +1,34 @@
+/* 
+  Website design and developed by DEVLOOSKIE
+  Abuse contact: hello@looskie.com
+  2021 - All rights reserved to creatable
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Some variables for colors n stuff */
+:root {
+  --background-dark: #222222;
+  --text-darkest: #606060;
+  --text-darker: #8e8e8e;
+  --text-lightest: #c9c9c9;
+  --accent: #ffdd6b;
+}
+
+/* Font faces  */
+
+@font-face {
+  font-family: "JetBrains Light";
+  src: url("./fonts/JetBrainsMono-Light.woff2");
+}
+
+@font-face {
+  font-family: "JetBrains Regular";
+  src: url("./fonts/JetBrainsMono-Regular.woff2");
+}
