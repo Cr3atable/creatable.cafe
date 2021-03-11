@@ -10,26 +10,118 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  transition: ease all 0.35s;
+  -webkit-transition: ease all 0.35s;
+  -moz-transition: ease all 0.35s;
+  -ms-transition: ease all 0.35s;
+  -o-transition: ease all 0.35s;
 }
 
 /* Some variables for colors n stuff */
 
 :root {
-  --background-dark: #222222;
+  --background-darkest: #222222;
+  --background-dark: #3f3f3f;
   --text-darkest: #606060;
   --text-darker: #8e8e8e;
   --text-lightest: #c9c9c9;
   --accent: #ffdd6b;
 }
 
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--background-dark);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+body {
+  background: var(--background-darkest);
+  color: var(--text-lightest);
+  font-size: 16px;
+  font-family: JetBrainsLight;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: JetBrainsRegular;
+  font-weight: 200;
+}
+
+a {
+  color: var(--text-darker);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+span {
+  color: var(--accent);
+}
+
+p.about {
+  max-width: 650px;
+  margin-top: 15px;
+  font-size: 19px;
+}
+
+.flexLeft,
+.flexRight {
+  flex: 50%;
+}
+
+.flexLeft {
+  margin: 85px 55px;
+  text-align: left;
+}
+
+.socials-title {
+  margin-top: 80px;
+}
+
+.socials-list {
+  list-style: none;
+}
+.socials-item {
+  margin-top: 15px;
+}
+.socials-item:first-child {
+  margin-top: 20px;
+}
+
+.flexRight {
+  display: flex;
+  min-height: 95vh;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Font faces  */
 
 @font-face {
-  font-family: "JetBrains Light";
+  font-family: JetBrainsLight;
   src: url("./fonts/JetBrainsMono-Light.woff2");
 }
 
 @font-face {
-  font-family: "JetBrains Regular";
+  font-family: JetBrainsRegular;
   src: url("./fonts/JetBrainsMono-Regular.woff2");
 }
