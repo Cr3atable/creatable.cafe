@@ -1,6 +1,7 @@
 /* 
   Website design and developed by DEVLOOSKIE
   Abuse contact: hello@looskie.com
+  
   2021 - All rights reserved to creatable
 */
 
